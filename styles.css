@@ -1,0 +1,88 @@
+body {
+	box-sizing: border-box;
+	height: 100vh;
+	width: 100%;
+}
+
+/* Top of site */
+
+header {
+	background-color: #2B2B2B;
+	display: flex;
+	height: 15vh;
+	flex-wrap: wrap; 
+	/*justify-content: flex-end;*/
+}
+
+.header-top-right {
+	/*align-self: flex-end;*/
+	border: 1px solid grey;
+	height: 30px;
+	text-align: center;
+	width:	200px;
+}
+
+.header-bottom {
+	display: flex;
+
+}
+
+.shares {
+	border: 1px solid grey;
+	height: 30px;
+	text-align: center;
+	width: 200px;
+}
+
+.playlist {
+	border: 1px solid grey;
+	height: 30px;
+	text-align: center;
+	width: 200px;
+}
+
+.personal {
+	border: 1px solid grey;
+	height: 30px;
+	text-align: center;
+	width: 200px;
+}
+
+.two-win {
+	border: 1px solid grey;
+	height: 40px;
+	text-align: center;
+	width: 200px;
+}
+
+
+p {
+	color: lightblue;
+}
+
+h2 {
+  color: white;
+}
+
+
+/* main potion of page */
+section {
+	background-color: #EFEFEF;
+	display: flex;
+	flex-wrap: wrap;
+	height: 85vh;
+}
+
+.body-header {
+	width: 100%;
+	text-align: left;
+} 
+
+article {
+	border: 1px solid black;
+	background-color: green;
+	height: 400px;
+	width: 280px;
+}
+
+
