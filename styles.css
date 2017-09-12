@@ -1,3 +1,21 @@
+/* shadow on cards */
+
+/* header icons */
+
+/* mobile header */
+
+/* margins? */
+
+/* move card background css into position */
+
+/* change font color over card background images or figure out tranparancy */
+
+/* forward icons over CSS background image  */
+
+/* header font sizing */
+
+/* delete unused files */
+
 body {
 	background-color: #EFEFEF;
 	box-sizing: border-box;
@@ -13,7 +31,7 @@ p {
 /* Top of site */
 
 header {
-	background-color: #2B2B2B;
+	background-color: #593837;
 	height: 20vh;
 	width: 100%
 }
@@ -23,16 +41,24 @@ header h2 {
 }
 
 .header-top-right {
-	border: 1px solid grey;
 	display: flex;
-	height: 30px;
+	height: 40px;
 	justify-content: flex-end;
-	/*width:	200px;*/
 }
 
-.top-right {
-	margin: 0 1.5% 0 0;
-	color: lightblue;
+.user-icon {
+	width: 25px;
+    margin: 10px 10px 0 0;
+}
+
+.down-arrow {
+	width: 25px;
+	margin: 10px 10px 0 0;
+}
+
+.top-right-user-name {
+	margin: 20px 10px 0 0;
+	color: #94B9AF;
 }
 
 .header-bottom {
@@ -44,32 +70,32 @@ header h2 {
 }
 
 .header-bottom p {
-	color: lightblue;
+	color: #94B9AF;
 	margin: 0 2% 0 0;
 }
 
-.shares {
+.recipes {
 	border: 1px solid grey;
 	height: 30px;
 	text-align: center;
 	width: 15%;
 }
 
-.playlist {
+.restaurants {
 	border: 1px solid grey;
 	height: 30px;
 	text-align: center;
 	width: 15%;
 }
 
-.personal {
+.photo-contest {
 	border: 1px solid grey;
 	height: 30px;
 	text-align: center;
 	width: 15%;
 }
 
-.two-win {
+.avocado {
 	border: 1px solid grey;
 	height: 40px;
 	margin-left: auto;
@@ -82,7 +108,7 @@ header h2 {
 .body-header {
 	text-align: left;
 	width: 100%;
-	margin: 40px 20px 40px 20px;
+	margin: 40px 0 40px 100px;
 } 
 
 .main-body {
@@ -101,17 +127,69 @@ header h2 {
 
 /* Top of Card */
 
-.top-of-card {
-	background: url("images/placeholder.jpg") no-repeat; 
+.top-of-card { 
 	height: 35%;
 	display: flex;
 	justify-content: space-between;
 }
 
+.first-card .top-of-card {
+	background: url("images/Mushroom and Crabcake.jpg") no-repeat;
+	background-position: center;
+	background-size: cover; 
+}
+
+.second-card .top-of-card {
+	background: url("images/Creme Fraiche.jpg") no-repeat;
+	background-position: center;
+	background-size: cover; 
+}
+
+.third-card .top-of-card {
+	background: url("images/Fried Egg.jpg") no-repeat;
+	background-position: center;
+	background-size: cover; 
+}
+
+.fourth-card .top-of-card {
+	background: url("images/Lemon Zest.jpg") no-repeat;
+	background-position: center;
+	background-size: cover; 
+}
+
+.fifth-card .top-of-card {
+	background: url("images/Overeasy with Micro Greens.jpg") no-repeat;
+	background-position: center;
+	background-size: cover; 
+}
+
+.sixth-card .top-of-card {
+	background: url("images/Soft Boiled Egg and Pinenut.jpg") no-repeat;
+	background-position: center;
+	background-size: cover; 
+}
+
+.seventh-card .top-of-card {
+	background: url("images/Strawberry and Hemp Seed.jpg") no-repeat;
+	background-position: center;
+	background-size: cover; 
+}
+
+.eighth-card .top-of-card {
+	background: url("images/Sunflower Seed and Cherry Tomato.jpg") no-repeat;
+	background-position: center;
+	background-size: cover; 
+}
+
 .top-of-card p {
  margin: 0;
  color: white;
- padding: 20px;
+ padding: 20px 20px 5px 20px;
+}
+
+.top-of-card-right h2{
+	color: white;
+	margin: 0 0 0 27px;
 }
 
 /* Bottom of Card */
@@ -129,21 +207,23 @@ header h2 {
 }
 
 .bottom-of-card h2 {
+	color: #94B9AF;
 	margin: 0;
 }
 
 .middle-card-box {
 	margin: 10px 0 10px 0;
-	background-color: grey;
+	background-color: #593837;
 	padding: 10px;
 }
 
 .middle-card-box a {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 
 article {
+	background-color: white;
 	border: 1px solid black;
 	height: 375px;
 	margin: 5px 2px 5px 2px;
@@ -168,9 +248,5 @@ article {
 
 	.card-container {
 		width: 360px;
-	}
-
-    .header-bottom {
-    	
 	}
 }
