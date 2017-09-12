@@ -1,21 +1,3 @@
-/* shadow on cards */
-
-/* header icons */
-
-/* mobile header */
-
-/* margins? */
-
-/* move card background css into position */
-
-/* change font color over card background images or figure out tranparancy */
-
-/* forward icons over CSS background image  */
-
-/* header font sizing */
-
-/* delete unused files */
-
 body {
 	background-color: #EFEFEF;
 	box-sizing: border-box;
@@ -32,12 +14,13 @@ p {
 
 header {
 	background-color: #593837;
-	height: 20vh;
+	height: 15vh;
 	width: 100%
 }
 
 header h2 {
   color: white;
+  margin: 0;
 }
 
 .header-top-right {
@@ -47,68 +30,91 @@ header h2 {
 }
 
 .user-icon {
+	margin: 0 10px 0 0;
 	width: 25px;
-    margin: 10px 10px 0 0;
 }
 
 .down-arrow {
+	margin: 0 25px 0 0;
 	width: 25px;
-	margin: 10px 10px 0 0;
 }
 
 .top-right-user-name {
-	margin: 20px 10px 0 0;
 	color: #94B9AF;
+	margin: 20px 10px 0 0;
 }
 
 .header-bottom {
 	align-items: flex-end;
-	align-self: flex-end;
 	display: flex;
-	justify-content: flex-start;
-	margin-top: 4%;
+	margin-top: 25px;
 }
 
 .header-bottom p {
 	color: #94B9AF;
-	margin: 0 2% 0 0;
+	margin-top: 5px;
+}
+
+.recipe-icon {
+	height: 25px;
+    margin: 0 20px 0 30px;
+	width: 25px;
 }
 
 .recipes {
-	border: 1px solid grey;
+	display: flex;
 	height: 30px;
+	justify-content: center;
 	text-align: center;
-	width: 15%;
+}
+
+.rest-icon {
+	height: 30px;
+	margin: -2px 20px 0 45px;
+	width: 30px;
 }
 
 .restaurants {
-	border: 1px solid grey;
+	display: flex;
 	height: 30px;
+	justify-content: center;
 	text-align: center;
-	width: 15%;
+}
+
+.photo-icon {
+	height: 25px;
+	margin: 0 20px 0 45px;
+	width: 25px;
 }
 
 .photo-contest {
-	border: 1px solid grey;
+	display: flex;
 	height: 30px;
+	justify-content: center;
 	text-align: center;
-	width: 15%;
+}
+
+.avo-icon {
+	height: 50px;
+	margin: 0 5px 0 10px;
+	width: 50px;
 }
 
 .avocado {
-	border: 1px solid grey;
-	height: 40px;
+	align-items: center;
+	display: flex;
+	font-size: 1.5em;
+	justify-content: center;
 	margin-left: auto;
-	text-align: center;
-	width: 15%;
+	width: 250px;
 }
 
 /* main potion of page */
 
 .body-header {
 	text-align: left;
-	width: 100%;
-	margin: 40px 0 40px 100px;
+	display: inline-block;
+	margin-left: 30px;
 } 
 
 .main-body {
@@ -125,6 +131,14 @@ header h2 {
 
 /* cards */
 
+article {
+	background-color: white;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+	height: 375px;
+	margin: 5px 2px 5px 2px;
+	width: 300px;
+}
+
 /* Top of Card */
 
 .top-of-card { 
@@ -133,62 +147,20 @@ header h2 {
 	justify-content: space-between;
 }
 
-.first-card .top-of-card {
-	background: url("images/Mushroom and Crabcake.jpg") no-repeat;
-	background-position: center;
-	background-size: cover; 
-}
-
-.second-card .top-of-card {
-	background: url("images/Creme Fraiche.jpg") no-repeat;
-	background-position: center;
-	background-size: cover; 
-}
-
-.third-card .top-of-card {
-	background: url("images/Fried Egg.jpg") no-repeat;
-	background-position: center;
-	background-size: cover; 
-}
-
-.fourth-card .top-of-card {
-	background: url("images/Lemon Zest.jpg") no-repeat;
-	background-position: center;
-	background-size: cover; 
-}
-
-.fifth-card .top-of-card {
-	background: url("images/Overeasy with Micro Greens.jpg") no-repeat;
-	background-position: center;
-	background-size: cover; 
-}
-
-.sixth-card .top-of-card {
-	background: url("images/Soft Boiled Egg and Pinenut.jpg") no-repeat;
-	background-position: center;
-	background-size: cover; 
-}
-
-.seventh-card .top-of-card {
-	background: url("images/Strawberry and Hemp Seed.jpg") no-repeat;
-	background-position: center;
-	background-size: cover; 
-}
-
-.eighth-card .top-of-card {
-	background: url("images/Sunflower Seed and Cherry Tomato.jpg") no-repeat;
-	background-position: center;
-	background-size: cover; 
+.forward-icon {
+	height: 60px;
+	width: 60px;
+	padding: 15px 20px 5px 20px;
 }
 
 .top-of-card p {
  margin: 0;
- color: white;
+ color: black;
  padding: 20px 20px 5px 20px;
 }
 
 .top-of-card-right h2{
-	color: white;
+	color: black;
 	margin: 0 0 0 27px;
 }
 
@@ -222,12 +194,62 @@ header h2 {
 	color: white;
 }
 
-article {
-	background-color: white;
-	border: 1px solid black;
-	height: 375px;
-	margin: 5px 2px 5px 2px;
-	width: 300px;
+/* top of card background images */
+
+.first-card .top-of-card {
+	background: url("images/Mushroom and Crabcake.jpg") no-repeat;
+	background-position: center;
+	background-size: cover; 
+	opacity: 0.7;
+}
+
+.second-card .top-of-card {
+	background: url("images/Creme Fraiche.jpg") no-repeat;
+	background-position: center;
+	background-size: cover; 
+	opacity: 0.7;
+}
+
+.third-card .top-of-card {
+	background: url("images/Fried Egg.jpg") no-repeat;
+	background-position: center;
+	background-size: cover; 
+	opacity: 0.7;
+}
+
+.fourth-card .top-of-card {
+	background: url("images/Lemon Zest.jpg") no-repeat;
+	background-position: center;
+	background-size: cover; 
+	opacity: 0.7;
+}
+
+.fifth-card .top-of-card {
+	background: url("images/Overeasy with Micro Greens.jpg") no-repeat;
+	background-position: center;
+	background-size: cover; 
+	opacity: 0.7;
+}
+
+.sixth-card .top-of-card {
+	background: url("images/Soft Boiled Egg and Pinenut.jpg") no-repeat;
+	background-position: center;
+	background-size: cover; 
+	opacity: 0.7;
+}
+
+.seventh-card .top-of-card {
+	background: url("images/Strawberry and Hemp Seed.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+	opacity: 0.7; 
+}
+
+.eighth-card .top-of-card {
+	background: url("images/Sunflower Seed and Cherry Tomato.jpg") no-repeat;
+	background-position: center;
+	background-size: cover; 
+	opacity: 0.7;
 }
 
 @media (max-width: 1250px) {  
@@ -244,9 +266,51 @@ article {
 	}
 }
 
-@media (max-width: 625px) {  
+@media (max-width: 800px) {  
+
+	header {
+		height: 60vh;
+		display: flex;
+		flex-direction: column;
+		font-size: 1.5em;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.header-top-right {
+		justify-content: center;
+	}
+
+	.header-bottom {
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
 
 	.card-container {
-		width: 360px;
+		width: 287px;
 	}
+
+	.recipe-icon, .rest-icon, .photo-icon, .avocado {
+		margin-left: 0
+	}
+
+	.top-right-user-name {
+		margin: 6px 10px 0 0;
+		/*font-size: 18px;*/
+		display: none;
+	}
+
+	.restaurants, .photo-contest, .avocado {
+		margin-top: 25px;
+	}
+
+	.user-icon {
+		margin: 0 10px 0 25px;
+	}
+
+	.header-bottom p {
+    margin-top: 0;
+	}
+
 }
