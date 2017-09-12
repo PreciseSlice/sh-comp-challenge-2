@@ -1,64 +1,78 @@
 body {
+	background-color: #EFEFEF;
 	box-sizing: border-box;
 	height: 100vh;
 	width: 100%;
+	
+}
+
+p {
+	margin: 0;
 }
 
 /* Top of site */
 
 header {
 	background-color: #2B2B2B;
-	display: flex;
-	height: 15vh;
-	flex-wrap: wrap; 
-	/*justify-content: flex-end;*/
+	height: 20vh;
+	width: 100%
 }
 
 .header-top-right {
-	/*align-self: flex-end;*/
 	border: 1px solid grey;
+	display: flex;
 	height: 30px;
-	text-align: center;
-	width:	200px;
+	justify-content: flex-end;
+	/*width:	200px;*/
+}
+
+.top-right {
+	margin: 0 1.5% 0 0;
+	color: lightblue;
 }
 
 .header-bottom {
+	align-items: flex-end;
+	align-self: flex-end;
 	display: flex;
+	justify-content: flex-start;
+	margin-top: 4%;
+}
 
+.header-bottom p {
+	color: lightblue;
+	margin: 0 2% 0 0;
 }
 
 .shares {
 	border: 1px solid grey;
 	height: 30px;
 	text-align: center;
-	width: 200px;
+	width: 15%;
 }
 
 .playlist {
 	border: 1px solid grey;
 	height: 30px;
 	text-align: center;
-	width: 200px;
+	width: 15%;
 }
 
 .personal {
 	border: 1px solid grey;
 	height: 30px;
 	text-align: center;
-	width: 200px;
+	width: 15%;
 }
 
 .two-win {
 	border: 1px solid grey;
 	height: 40px;
+	margin-left: auto;
 	text-align: center;
-	width: 200px;
+	width: 15%;
 }
 
-
-p {
-	color: lightblue;
-}
 
 h2 {
   color: white;
@@ -66,23 +80,88 @@ h2 {
 
 
 /* main potion of page */
-section {
-	background-color: #EFEFEF;
-	display: flex;
-	flex-wrap: wrap;
-	height: 85vh;
-}
 
 .body-header {
-	width: 100%;
 	text-align: left;
+	width: 100%;
 } 
+
+.main-body {
+	width: 100%;
+}
+
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around; 
+	margin: auto;
+    width: 1245px;
+}
+
+/* cards */
+
+/* Top of Card */
+
+.top-of-card {
+	background: url("images/placeholder.jpg") no-repeat; 
+	height: 35%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.top-of-card p {
+ margin: 0;
+ color: white;
+ padding: 20px;
+}
+
+/* Bottom of Card */
+
+.bottom-of-card {
+	padding: 20px;
+}
+
+.bottom-of-card h3 {
+	margin: 0;
+}
+
+.bottom-of-card h4 {
+	margin: 20px 0 0 0;
+}
+
+.middle-card-box {
+	margin: 20px;
+	border: 1px solid black;
+}
 
 article {
 	border: 1px solid black;
-	background-color: green;
-	height: 400px;
-	width: 280px;
+	height: 375px;
+	margin: 5px 2px 5px 2px;
+	width: 300px;
 }
 
+@media (max-width: 1250px) {  
 
+	.card-container {
+    width: 940px;
+	}
+}	
+
+@media (max-width: 950px) {  
+
+	.card-container {
+		width: 625px;
+	}
+}
+
+@media (max-width: 625px) {  
+
+	.card-container {
+		width: 360px;
+	}
+
+    .header-bottom {
+    	
+	}
+}
