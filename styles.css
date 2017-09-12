@@ -3,7 +3,7 @@ body {
 	box-sizing: border-box;
 	height: 100vh;
 	width: 100%;
-	
+	font-family: 'Fira Sans', sans-serif;
 }
 
 p {
@@ -16,6 +16,10 @@ header {
 	background-color: #2B2B2B;
 	height: 20vh;
 	width: 100%
+}
+
+header h2 {
+  color: white;
 }
 
 .header-top-right {
@@ -73,17 +77,12 @@ header {
 	width: 15%;
 }
 
-
-h2 {
-  color: white;
-}
-
-
 /* main potion of page */
 
 .body-header {
 	text-align: left;
 	width: 100%;
+	margin: 40px 20px 40px 20px;
 } 
 
 .main-body {
@@ -129,9 +128,19 @@ h2 {
 	margin: 20px 0 0 0;
 }
 
+.bottom-of-card h2 {
+	margin: 0;
+}
+
 .middle-card-box {
-	margin: 20px;
-	border: 1px solid black;
+	margin: 10px 0 10px 0;
+	background-color: grey;
+	padding: 10px;
+}
+
+.middle-card-box a {
+	text-decoration: none;
+	color: black;
 }
 
 article {
