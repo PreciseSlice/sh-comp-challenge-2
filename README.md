@@ -1,4 +1,4 @@
-# Static comp 2 Spencer Herm
+# Static comp 2 Spencer Herms
 
 ![Comp](static-comp-challenge-2.jpg?raw=true)
 
